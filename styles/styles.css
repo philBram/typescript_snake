@@ -1,0 +1,22 @@
+.game-board-container {
+  display: grid;
+  aspect-ratio: 1;
+  grid-template-columns: repeat(var(--grid-size), 1fr);
+  grid-template-rows: repeat(var(--grid-size), 1fr);
+  border: 1px solid black;
+}
+
+.grid-item {
+  background-color: blue;
+  border: 1px solid black;
+}
+
+.grid-snake {
+  background-color: red;
+  border: 1px solid black;
+}
+
+.grid-food {
+  background-color: green;
+  border: 1px solid black;
+}
