@@ -32,7 +32,7 @@ export class GameBoard {
     }
     getNthItem(item) {
         const nthItem = ((item.x + 1) % (this.gameBoardSize + 1)) + (item.y * this.gameBoardSize);
-        const gridNthItem = document.querySelector(`.grid-item:nth-child(${nthItem})`);
+        const gridNthItem = document.querySelector(`.game-board-container div:nth-child(${nthItem})`);
         return gridNthItem;
     }
 }

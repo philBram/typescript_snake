@@ -44,7 +44,7 @@ export class GameBoard {
 
     private getNthItem(item: ISnakeItem): HTMLDivElement {
         const nthItem: number = ((item.x + 1) % (this.gameBoardSize + 1)) + (item.y * this.gameBoardSize)
-        const gridNthItem: HTMLDivElement =  document.querySelector(`.grid-item:nth-child(${nthItem})`) as HTMLDivElement
+        const gridNthItem: HTMLDivElement =  document.querySelector(`.game-board-container div:nth-child(${nthItem})`) as HTMLDivElement
 
         return gridNthItem
     }
