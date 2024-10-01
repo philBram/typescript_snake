@@ -21,9 +21,7 @@ export class GameBoard {
     drawSnake(snakeBody) {
         snakeBody.forEach(item => {
             const gridNthItem = this.getNthItem(item);
-            if (gridNthItem) {
-                gridNthItem.className = "grid-snake";
-            }
+            gridNthItem.className = "grid-snake";
         });
     }
     drawFood(foodItem) {

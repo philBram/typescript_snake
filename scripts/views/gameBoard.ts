@@ -31,9 +31,7 @@ export class GameBoard {
     drawSnake(snakeBody: ISnakeItem[]): void {
         snakeBody.forEach(item => {
             const gridNthItem: HTMLDivElement = this.getNthItem(item)
-            if (gridNthItem) {
-                gridNthItem.className = "grid-snake"
-            }
+            gridNthItem.className = "grid-snake"
         })
     }
 
